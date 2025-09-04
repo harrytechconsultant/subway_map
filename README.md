@@ -1,12 +1,14 @@
 # Hello World App
 
-A simple Hello World application built with React, Node.js, and Bun.
+A simple Hello World application built with React, Node.js, and Bun, featuring an interactive map centered around New York City.
 
 ## Features
 
 - React frontend with Vite
 - Node.js backend with Express
 - Bun as package manager
+- Interactive Leaflet map centered on NYC
+- Sample subway station markers
 - Hot reloading for development
 - API proxy configuration
 
@@ -50,7 +52,9 @@ This will start both the frontend (port 3000) and backend (port 3001) servers co
     └── src/
         ├── main.jsx      # React entry point
         ├── App.jsx       # Main App component
-        └── App.css       # Styles
+        ├── App.css       # Styles
+        └── components/
+            └── Map.jsx   # Leaflet map component
 ```
 
 ## Development
@@ -59,9 +63,17 @@ This will start both the frontend (port 3000) and backend (port 3001) servers co
 - Backend API runs on: http://localhost:3001
 - API requests from frontend are proxied to backend automatically
 
+## Map Features
+
+- **Center**: New York City (40.7128°N, 74.0060°W)
+- **Zoom Level**: 12 (shows most of Manhattan)
+- **Tiles**: OpenStreetMap
+- **Markers**: Sample subway stations with popup information
+- **Interactive**: Click markers to see station details
+
 ## API Endpoints
 
 - `GET /` - Welcome message
 - `GET /api/hello` - Hello World message
 
-The frontend automatically fetches from the backend API and displays the message.
+The frontend automatically fetches from the backend API and displays the message, along with an interactive map of NYC subway stations.

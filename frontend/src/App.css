@@ -1,5 +1,5 @@
 .app {
-  max-width: 800px;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 2rem;
   text-align: center;
@@ -28,6 +28,23 @@ h3 {
   padding: 1.5rem;
   border-radius: 8px;
   margin: 2rem 0;
+}
+
+.map-section {
+  margin: 2rem 0;
+}
+
+.map-container {
+  background: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  padding: 1rem;
+  margin: 1rem 0;
+}
+
+.map-container h2 {
+  margin-bottom: 1rem;
+  color: #333;
 }
 
 button {
