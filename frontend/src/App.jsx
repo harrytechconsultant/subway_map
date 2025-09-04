@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react'
-import Map from './components/Map'
+import SubwayMap from './components/SubwayMap'
 import './App.css'
 
 function App() {
@@ -24,29 +24,8 @@ function App() {
 
   return (
     <div className="app">
-      <h1>Hello World! 🚇</h1>
-      <p>Welcome to your React + Node.js + Bun application</p>
-      
-      <div className="backend-section">
-        <h2>Backend Connection</h2>
-        <p>Message from backend: <strong>{backendMessage}</strong></p>
-        <button onClick={fetchFromBackend} disabled={loading}>
-          {loading ? 'Loading...' : 'Refresh from Backend'}
-        </button>
-      </div>
-      
       <div className="map-section">
-        <Map />
-      </div>
-      
-      <div className="info">
-        <h3>Tech Stack:</h3>
-        <ul>
-          <li>Frontend: React with Vite</li>
-          <li>Backend: Node.js with Express</li>
-          <li>Package Manager: Bun</li>
-          <li>Maps: Leaflet with react-leaflet</li>
-        </ul>
+        <SubwayMap />
       </div>
     </div>
   )
